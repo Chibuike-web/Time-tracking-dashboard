@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Time-tracking Dashboard</title>
+		<link rel="stylesheet" href="./dist/output.css" />
+		<script src="index.js" defer></script>
+	</head>
+	<body class="bg-veryDarkBlue grid place-items-center w-screen h-screen">
+		<!-- Main -->
+		<main class="flex flex-row gap-[31px] max-w-fit w-full">
+			<!-- User Profile -->
+			<section
+				class="user-profile bg-darkBlue w-full max-w-[254px] rounded-[14px]"
+			>
+				<div class="bg-blue flex flex-col px-6 pt-8 pb-[72px] rounded-[14px]">
+					<div class="avatar w-[80px] border-[3px] border-white rounded-full">
+						<img
+							src="./images/image-jeremy.png"
+							alt="Jeremy Robson"
+							class="w-full"
+						/>
+					</div>
+					<div class="info flex flex-col gap-[10px] pt-[56px] w-[155px]">
+						<p class="text-paleBlue text-[16px] font-light">Report for</p>
+						<h1 class="text-white text-[40px] font-light leading-[40px]">
+							Jeremy Robson
+						</h1>
+					</div>
+				</div>
+
+				<!-- Time Tracking -->
+				<div
+					class="tracking-btn w-full px-6 pb-[38px] pt-8 flex flex-col gap-5"
+				>
+					<p
+						class="daily text-white text-[18px] font-normal cursor-pointer hover:text-white"
+					>
+						Daily
+					</p>
+					<p
+						class="weekly text-desaturatedBlue text-[18px] font-normal cursor-pointer hover:text-white"
+					>
+						Weekly
+					</p>
+					<p
+						class="monthly text-desaturatedBlue text-[18px] font-normal cursor-pointer hover:text-white"
+					>
+						Monthly
+					</p>
+				</div>
+			</section>
+
+			<!-- Time Tracking -->
+			<section class="time-tracking w-full">
+				<!-- Time Card One (Work) -->
+				<div
+					class="time-card one bg-lightRedWork rounded-[16px] w-full overflow-hidden"
+				>
+					<figure
+						class="place-self-start justify-self-end mt-[-10px] mr-[18px]"
+					>
+						<img
+							src="./images/icon-work.svg"
+							alt="Work icon"
+							class="w-full h-auto"
+						/>
+					</figure>
+					<div
+						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B]"
+					>
+						<div class="flex flex-row justify-between items-center mb-6">
+							<p class="text-white text-[18px] font-normal">Work</p>
+							<img src="./images/icon-ellipsis.svg" alt="More options" />
+						</div>
+						<h1
+							class="timeframe-hours work text-white text-[56px] font-light leading-[1em] mb-[10px]"
+						>
+							5hrs
+						</h1>
+						<p class="timeframe-text work text-paleBlue">Yesterday - 7hrs</p>
+					</div>
+				</div>
+
+				<!-- Time Card Two (Play) -->
+				<div
+					class="time-card two bg-softBluePlay rounded-[16px] w-full overflow-hidden"
+				>
+					<figure
+						class="place-self-start justify-self-end mt-[-10px] mr-[18px]"
+					>
+						<img
+							src="./images/icon-play.svg"
+							alt="Play icon"
+							class="w-full h-auto"
+						/>
+					</figure>
+
+					<div
+						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B]"
+					>
+						<div class="flex flex-row justify-between items-center mb-6">
+							<p class="text-white text-[18px] font-normal">Play</p>
+							<img src="./images/icon-ellipsis.svg" alt="" />
+						</div>
+						<h1
+							class="timeframe-hours play text-white text-[56px] font-light leading-[1em] mb-[10px]"
+						>
+							1hr
+						</h1>
+						<p class="timeframe-text play text-paleBlue">Yesterday - 2hrs</p>
+					</div>
+				</div>
+
+				<!-- Time Card Three (Study) -->
+				<div
+					class="time-card three bg-lightRedStudy rounded-[16px] w-full overflow-hidden"
+				>
+					<figure
+						class="place-self-start justify-self-end mt-[-10px] mr-[18px]"
+					>
+						<img
+							src="./images/icon-study.svg"
+							alt="Play icon"
+							class="w-full h-auto"
+						/>
+					</figure>
+					<div
+						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B]"
+					>
+						<div class="flex flex-row justify-between items-center mb-6">
+							<p class="text-white text-[18px] font-normal">Study</p>
+							<img src="./images/icon-ellipsis.svg" alt="" />
+						</div>
+						<h1
+							class="timeframe-hours study text-white text-[56px] font-light leading-[1em] mb-[10px]"
+						>
+							0hr
+						</h1>
+						<p class="timeframe-text study text-paleBlue">Yesterday - 1hr</p>
+					</div>
+				</div>
+
+				<!-- Time Card Four (Exercise) -->
+				<div
+					class="time-card four bg-limeGreenExercise rounded-[16px] w-full overflow-hidden"
+				>
+					<figure class="place-self-start justify-self-end mr-[18px]">
+						<img
+							src="./images/icon-exercise.svg"
+							alt="Play icon"
+							class="w-full h-auto"
+						/>
+					</figure>
+					<div
+						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B]"
+					>
+						<div class="flex flex-row justify-between items-center mb-6">
+							<p class="text-white text-[18px] font-normal">Exercise</p>
+							<img src="./images/icon-ellipsis.svg" alt="" />
+						</div>
+						<h1
+							class="timeframe-hours exercise text-white text-[56px] font-light leading-[1em] mb-[10px]"
+						>
+							1hr
+						</h1>
+						<p class="timeframe-text exercise text-paleBlue">Yesterday - 1hr</p>
+					</div>
+				</div>
+
+				<!-- Time Card Five (Social) -->
+				<div
+					class="time-card five bg-violetSocial rounded-[16px] w-full overflow-hidden"
+				>
+					<figure
+						class="place-self-start justify-self-end mt-[-10px] mr-[18px]"
+					>
+						<img
+							src="./images/icon-social.svg"
+							alt="Play icon"
+							class="w-full h-auto"
+						/>
+					</figure>
+					<div
+						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B]"
+					>
+						<div class="flex flex-row justify-between items-center mb-6">
+							<p class="text-white text-[18px] font-normal">Social</p>
+							<img src="./images/icon-ellipsis.svg" alt="" />
+						</div>
+						<h1
+							class="timeframe-hours social text-white text-[56px] font-light leading-[1em] mb-[10px]"
+						>
+							1hr
+						</h1>
+						<p class="timeframe-text social text-paleBlue">Yesterday - 3hrs</p>
+					</div>
+				</div>
+
+				<!-- Time Card Six (Self-care) -->
+				<div
+					class="time-card six bg-softOrangeSelfCare rounded-[16px] w-full overflow-hidden"
+				>
+					<figure
+						class="place-self-start justify-self-end mt-[-10px] mr-[18px]"
+					>
+						<img
+							src="./images/icon-self-care.svg"
+							alt="Play icon"
+							class="w-full h-auto"
+						/>
+					</figure>
+
+					<div
+						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B]"
+					>
+						<div class="flex flex-row justify-between items-center mb-6">
+							<p class="text-white text-[18px] font-normal">Work</p>
+							<img src="./images/icon-ellipsis.svg" alt="" />
+						</div>
+						<h1
+							class="timeframe-hours self-care text-white text-[56px] font-light leading-[1em] mb-[10px]"
+						>
+							0hr
+						</h1>
+						<p class="timeframe-text self-care text-paleBlue">
+							Yesterday - 1hr
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
