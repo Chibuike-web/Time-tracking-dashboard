@@ -37,10 +37,10 @@ html {
 
 .time-tracking {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(200px, 255px));
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 	grid-auto-rows: 252px;
-	row-gap: 35px;
-	column-gap: 31px;
+	row-gap: 2.1875rem; /* 35px */
+	column-gap: 1.9375rem; /* 31px */
 }
 
 .time-card {

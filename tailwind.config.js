@@ -3,10 +3,11 @@ module.exports = {
 	content: ["./*.html"],
 	theme: {
 		screens: {
-			sm: "480px",
-			md: "768px",
-			lg: "976px",
-			xl: "1440px",
+			"2xl": { max: "1535px" }, // Target screens smaller than 1536px
+			xl: { max: "1279px" }, // Target screens smaller than 1280px
+			lg: { max: "1023px" }, // Target screens smaller than 1024px
+			md: { max: "767px" }, // Target screens smaller than 768px
+			sm: { max: "639px" }, // Target screens smaller than 640px
 		},
 		extend: {
 			colors: {

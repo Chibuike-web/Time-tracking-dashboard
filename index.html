@@ -10,22 +10,18 @@
 	</head>
 	<body class="bg-veryDarkBlue grid place-items-center w-screen h-screen">
 		<!-- Main -->
-		<main class="flex flex-row gap-[31px] max-w-fit w-full">
+		<main class="flex items-start gap-[31px] max-w-[1112px] w-full lg:flex-col p-7">
 			<!-- User Profile -->
-			<section
-				class="user-profile bg-darkBlue w-full max-w-[254px] rounded-[14px]"
-			>
-				<div class="bg-blue flex flex-col px-6 pt-8 pb-[72px] rounded-[14px]">
-					<div class="avatar w-[80px] border-[3px] border-white rounded-full">
-						<img
-							src="./images/image-jeremy.png"
-							alt="Jeremy Robson"
-							class="w-full"
-						/>
+			<section class="user-profile bg-darkBlue w-full max-w-[254px] rounded-[14px] lg:max-w-full">
+				<div
+					class="bg-blue flex flex-col px-6 pt-8 pb-[72px] rounded-[14px] lg:flex-row lg:w-full lg:items-center lg:gap-[24px] lg:py-8"
+				>
+					<div class="avatar w-full max-w-[80px] border-[3px] border-white rounded-full">
+						<img src="./images/image-jeremy.png" alt="Jeremy Robson" class="w-full" />
 					</div>
-					<div class="info flex flex-col gap-[10px] pt-[56px] w-[155px]">
+					<div class="info flex flex-col gap-[10px] pt-[56px] w-[155px] lg:pt-0 lg:w-full">
 						<p class="text-paleBlue text-[16px] font-light">Report for</p>
-						<h1 class="text-white text-[40px] font-light leading-[40px]">
+						<h1 class="text-white text-[40px] font-light leading-[40px] md: text-2xl">
 							Jeremy Robson
 						</h1>
 					</div>
@@ -33,11 +29,9 @@
 
 				<!-- Time Tracking -->
 				<div
-					class="tracking-btn w-full px-6 pb-[38px] pt-8 flex flex-col gap-5"
+					class="tracking-btn w-full px-6 pb-[38px] pt-8 flex flex-col gap-5 lg:flex-row lg:justify-between"
 				>
-					<p
-						class="daily text-white text-[18px] font-normal cursor-pointer hover:text-white"
-					>
+					<p class="daily text-white text-[18px] font-normal cursor-pointer hover:text-white">
 						Daily
 					</p>
 					<p
@@ -56,20 +50,12 @@
 			<!-- Time Tracking -->
 			<section class="time-tracking w-full">
 				<!-- Time Card One (Work) -->
-				<div
-					class="time-card one bg-lightRedWork rounded-[16px] w-full overflow-hidden"
-				>
-					<figure
-						class="place-self-start justify-self-end mt-[-10px] mr-[18px]"
-					>
-						<img
-							src="./images/icon-work.svg"
-							alt="Work icon"
-							class="w-full h-auto"
-						/>
+				<div class="time-card one bg-lightRedWork rounded-[16px] w-full overflow-hidden">
+					<figure class="place-self-start justify-self-end mt-[-10px] mr-[18px]">
+						<img src="./images/icon-work.svg" alt="Work icon" class="w-full h-auto" />
 					</figure>
 					<div
-						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B]"
+						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B] s,"
 					>
 						<div class="flex flex-row justify-between items-center mb-6">
 							<p class="text-white text-[18px] font-normal">Work</p>
@@ -85,17 +71,9 @@
 				</div>
 
 				<!-- Time Card Two (Play) -->
-				<div
-					class="time-card two bg-softBluePlay rounded-[16px] w-full overflow-hidden"
-				>
-					<figure
-						class="place-self-start justify-self-end mt-[-10px] mr-[18px]"
-					>
-						<img
-							src="./images/icon-play.svg"
-							alt="Play icon"
-							class="w-full h-auto"
-						/>
+				<div class="time-card two bg-softBluePlay rounded-[16px] w-full overflow-hidden">
+					<figure class="place-self-start justify-self-end mt-[-10px] mr-[18px]">
+						<img src="./images/icon-play.svg" alt="Play icon" class="w-full h-auto" />
 					</figure>
 
 					<div
@@ -115,17 +93,9 @@
 				</div>
 
 				<!-- Time Card Three (Study) -->
-				<div
-					class="time-card three bg-lightRedStudy rounded-[16px] w-full overflow-hidden"
-				>
-					<figure
-						class="place-self-start justify-self-end mt-[-10px] mr-[18px]"
-					>
-						<img
-							src="./images/icon-study.svg"
-							alt="Play icon"
-							class="w-full h-auto"
-						/>
+				<div class="time-card three bg-lightRedStudy rounded-[16px] w-full overflow-hidden">
+					<figure class="place-self-start justify-self-end mt-[-10px] mr-[18px]">
+						<img src="./images/icon-study.svg" alt="Play icon" class="w-full h-auto" />
 					</figure>
 					<div
 						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B]"
@@ -144,15 +114,9 @@
 				</div>
 
 				<!-- Time Card Four (Exercise) -->
-				<div
-					class="time-card four bg-limeGreenExercise rounded-[16px] w-full overflow-hidden"
-				>
+				<div class="time-card four bg-limeGreenExercise rounded-[16px] w-full overflow-hidden">
 					<figure class="place-self-start justify-self-end mr-[18px]">
-						<img
-							src="./images/icon-exercise.svg"
-							alt="Play icon"
-							class="w-full h-auto"
-						/>
+						<img src="./images/icon-exercise.svg" alt="Play icon" class="w-full h-auto" />
 					</figure>
 					<div
 						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B]"
@@ -171,17 +135,9 @@
 				</div>
 
 				<!-- Time Card Five (Social) -->
-				<div
-					class="time-card five bg-violetSocial rounded-[16px] w-full overflow-hidden"
-				>
-					<figure
-						class="place-self-start justify-self-end mt-[-10px] mr-[18px]"
-					>
-						<img
-							src="./images/icon-social.svg"
-							alt="Play icon"
-							class="w-full h-auto"
-						/>
+				<div class="time-card five bg-violetSocial rounded-[16px] w-full overflow-hidden">
+					<figure class="place-self-start justify-self-end mt-[-10px] mr-[18px]">
+						<img src="./images/icon-social.svg" alt="Play icon" class="w-full h-auto" />
 					</figure>
 					<div
 						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B]"
@@ -200,17 +156,9 @@
 				</div>
 
 				<!-- Time Card Six (Self-care) -->
-				<div
-					class="time-card six bg-softOrangeSelfCare rounded-[16px] w-full overflow-hidden"
-				>
-					<figure
-						class="place-self-start justify-self-end mt-[-10px] mr-[18px]"
-					>
-						<img
-							src="./images/icon-self-care.svg"
-							alt="Play icon"
-							class="w-full h-auto"
-						/>
+				<div class="time-card six bg-softOrangeSelfCare rounded-[16px] w-full overflow-hidden">
+					<figure class="place-self-start justify-self-end mt-[-10px] mr-[18px]">
+						<img src="./images/icon-self-care.svg" alt="Play icon" class="w-full h-auto" />
 					</figure>
 
 					<div
@@ -225,9 +173,7 @@
 						>
 							0hr
 						</h1>
-						<p class="timeframe-text self-care text-paleBlue">
-							Yesterday - 1hr
-						</p>
+						<p class="timeframe-text self-care text-paleBlue">Yesterday - 1hr</p>
 					</div>
 				</div>
 			</section>
