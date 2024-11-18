@@ -814,31 +814,6 @@ html {
   box-sizing: border-box;
 }
 
-/* @font-face {
-	font-family: "DM Sans";
-	src: url("../Fonts/DMSans_18pt-Regular.ttf") format("truetype");
-	font-weight: 400;
-	font-style: normal;
-}
-
-/* SemiBold weight */
-
-/* @font-face {
-	font-family: "DM Sans";
-	src: url("../Fonts/DMSans_18pt-SemiBold.ttf") format("truetype");
-	font-weight: 600;
-	font-style: normal;
-} */
-
-/* Bold weight */
-
-/* @font-face {
-	font-family: "DM Sans";
-	src: url("../Fonts/DMSans_18pt-Bold.ttf") format("truetype");
-	font-weight: 700;
-	font-style: normal;
-} */
-
 .time-tracking {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -955,16 +930,6 @@ html {
 
   .md\:p-6 {
     padding: 1.5rem;
-  }
-
-  .md\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .md\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
   }
 
   .md\:py-6 {
