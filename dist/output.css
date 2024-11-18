@@ -728,10 +728,6 @@ video {
   background-color: hsl(264 64% 52% / var(--tw-bg-opacity));
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .p-8 {
   padding: 2rem;
 }
@@ -777,12 +773,12 @@ video {
   font-weight: 300;
 }
 
-.font-normal {
-  font-weight: 400;
-}
-
 .font-medium {
   font-weight: 500;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .leading-\[1em\] {
@@ -852,7 +848,7 @@ html {
   -moz-column-gap: 1.9375rem;
        column-gap: 1.9375rem;
   /* 31px */
-  @media (max-width: 600px) {
+  @media (max-width: 767px) {
     grid-auto-rows: 166px;
   }
 }
@@ -909,6 +905,16 @@ html {
     padding: 2rem;
   }
 
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .lg\:pt-0 {
     padding-top: 0px;
   }
@@ -951,11 +957,6 @@ html {
     padding: 1.5rem;
   }
 
-  .md\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
   .md\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -966,16 +967,21 @@ html {
     padding-bottom: 4rem;
   }
 
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
-  .md\:text-\[32px\] {
-    font-size: 32px;
-  }
-
   .md\:text-\[16px\] {
     font-size: 16px;
+  }
+
+  .md\:text-\[32px\] {
+    font-size: 32px;
   }
 }

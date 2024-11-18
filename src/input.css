@@ -42,7 +42,7 @@ html {
 	row-gap: 2.1875rem; /* 35px */
 	column-gap: 1.9375rem; /* 31px */
 
-	@media (max-width: 600px) {
+	@media (max-width: 767px) {
 		grid-auto-rows: 166px;
 	}
 }
