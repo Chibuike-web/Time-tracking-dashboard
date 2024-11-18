@@ -8,20 +8,24 @@
 		<link rel="stylesheet" href="./dist/output.css" />
 		<script src="index.js" defer></script>
 	</head>
-	<body class="bg-veryDarkBlue grid place-items-center w-screen h-screen">
+	<body class="bg-veryDarkBlue grid place-items-center h-screen">
 		<!-- Main -->
-		<main class="flex items-start gap-[31px] max-w-[1112px] w-full lg:flex-col p-7">
+		<main class="flex items-start gap-[31px] max-w-[1112px] w-full lg:flex-col md:py-16 md:px-4">
 			<!-- User Profile -->
 			<section class="user-profile bg-darkBlue w-full max-w-[254px] rounded-[14px] lg:max-w-full">
 				<div
-					class="bg-blue flex flex-col px-6 pt-8 pb-[72px] rounded-[14px] lg:flex-row lg:w-full lg:items-center lg:gap-[24px] lg:py-8"
+					class="bg-blue flex flex-col px-6 pt-8 pb-[72px] rounded-[14px] lg:flex-row lg:w-full lg:items-center lg:gap-[24px] lg:p-8"
 				>
-					<div class="avatar w-full max-w-[80px] border-[3px] border-white rounded-full">
+					<div
+						class="avatar w-full max-w-[80px] border-[3px] border-white rounded-full md:max-w-[72px]"
+					>
 						<img src="./images/image-jeremy.png" alt="Jeremy Robson" class="w-full" />
 					</div>
-					<div class="info flex flex-col gap-[10px] pt-[56px] w-[155px] lg:pt-0 lg:w-full">
+					<div
+						class="info flex flex-col gap-[10px] pt-[56px] w-[155px] lg:pt-0 lg:w-full md:gap-[4px]"
+					>
 						<p class="text-paleBlue text-[16px] font-light">Report for</p>
-						<h1 class="text-white text-[40px] font-light leading-[40px] md: text-2xl">
+						<h1 class="text-white text-[40px] font-light leading-[40px] md:text-2xl">
 							Jeremy Robson
 						</h1>
 					</div>
@@ -29,7 +33,7 @@
 
 				<!-- Time Tracking -->
 				<div
-					class="tracking-btn w-full px-6 pb-[38px] pt-8 flex flex-col gap-5 lg:flex-row lg:justify-between"
+					class="tracking-btn w-full px-6 pb-[38px] pt-8 flex flex-col gap-5 lg:flex-row lg:justify-between md:py-6"
 				>
 					<p class="daily text-white text-[18px] font-normal cursor-pointer hover:text-white">
 						Daily
@@ -55,18 +59,20 @@
 						<img src="./images/icon-work.svg" alt="Work icon" class="w-full h-auto" />
 					</figure>
 					<div
-						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B] s,"
+						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B] md:p-6"
 					>
-						<div class="flex flex-row justify-between items-center mb-6">
-							<p class="text-white text-[18px] font-normal">Work</p>
+						<div class="flex flex-row justify-between items-center mb-6 md:mb-[20px]">
+							<p class="text-white text-[18px] font-medium md:text-[16px]">Work</p>
 							<img src="./images/icon-ellipsis.svg" alt="More options" />
 						</div>
-						<h1
-							class="timeframe-hours work text-white text-[56px] font-light leading-[1em] mb-[10px]"
-						>
-							5hrs
-						</h1>
-						<p class="timeframe-text work text-paleBlue">Yesterday - 7hrs</p>
+						<div class="md:flex md:flex-row md:items-center md:justify-between">
+							<h1
+								class="timeframe-hours work text-white text-[56px] font-light leading-[1em] mb-[10px] md:text-[32px] md:m-0"
+							>
+								5hrs
+							</h1>
+							<p class="timeframe-text work text-paleBlue">Yesterday - 7hrs</p>
+						</div>
 					</div>
 				</div>
 
@@ -77,18 +83,20 @@
 					</figure>
 
 					<div
-						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B]"
+						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B] md:p-6"
 					>
-						<div class="flex flex-row justify-between items-center mb-6">
-							<p class="text-white text-[18px] font-normal">Play</p>
+						<div class="flex flex-row justify-between items-center mb-6 md:mb-[20px]">
+							<p class="text-white text-[18px] font-medium md:text-[16px]">Play</p>
 							<img src="./images/icon-ellipsis.svg" alt="" />
 						</div>
-						<h1
-							class="timeframe-hours play text-white text-[56px] font-light leading-[1em] mb-[10px]"
-						>
-							1hr
-						</h1>
-						<p class="timeframe-text play text-paleBlue">Yesterday - 2hrs</p>
+						<div class="md:flex md:flex-row md:items-center md:justify-between">
+							<h1
+								class="timeframe-hours play text-white text-[56px] font-light leading-[1em] mb-[10px] md:text-[32px] md:m-0"
+							>
+								1hr
+							</h1>
+							<p class="timeframe-text play text-paleBlue">Yesterday - 2hrs</p>
+						</div>
 					</div>
 				</div>
 
@@ -98,18 +106,20 @@
 						<img src="./images/icon-study.svg" alt="Play icon" class="w-full h-auto" />
 					</figure>
 					<div
-						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B]"
+						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B] md:p-6"
 					>
-						<div class="flex flex-row justify-between items-center mb-6">
-							<p class="text-white text-[18px] font-normal">Study</p>
+						<div class="flex flex-row justify-between items-center mb-6 md:mb-[20px]">
+							<p class="text-white text-[18px] font-medium md:text-[16px]">Study</p>
 							<img src="./images/icon-ellipsis.svg" alt="" />
 						</div>
-						<h1
-							class="timeframe-hours study text-white text-[56px] font-light leading-[1em] mb-[10px]"
-						>
-							0hr
-						</h1>
-						<p class="timeframe-text study text-paleBlue">Yesterday - 1hr</p>
+						<div class="md:flex md:flex-row md:items-center md:justify-between">
+							<h1
+								class="timeframe-hours study text-white text-[56px] font-light leading-[1em] mb-[10px] md:text-[32px] md:m-0"
+							>
+								0hr
+							</h1>
+							<p class="timeframe-text study text-paleBlue">Yesterday - 1hr</p>
+						</div>
 					</div>
 				</div>
 
@@ -119,18 +129,20 @@
 						<img src="./images/icon-exercise.svg" alt="Play icon" class="w-full h-auto" />
 					</figure>
 					<div
-						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B]"
+						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B] md:p-6"
 					>
-						<div class="flex flex-row justify-between items-center mb-6">
-							<p class="text-white text-[18px] font-normal">Exercise</p>
+						<div class="flex flex-row justify-between items-center mb-6 md:mb-[20px]">
+							<p class="text-white text-[18px] font-medium md:text[16px]">Exercise</p>
 							<img src="./images/icon-ellipsis.svg" alt="" />
 						</div>
-						<h1
-							class="timeframe-hours exercise text-white text-[56px] font-light leading-[1em] mb-[10px]"
-						>
-							1hr
-						</h1>
-						<p class="timeframe-text exercise text-paleBlue">Yesterday - 1hr</p>
+						<div class="md:flex md:flex-row md:items-center md:justify-between">
+							<h1
+								class="timeframe-hours exercise text-white text-[56px] font-light leading-[1em] mb-[10px] md:text-[32px] md:m-0"
+							>
+								1hr
+							</h1>
+							<p class="timeframe-text exercise text-paleBlue">Yesterday - 1hr</p>
+						</div>
 					</div>
 				</div>
 
@@ -140,18 +152,20 @@
 						<img src="./images/icon-social.svg" alt="Play icon" class="w-full h-auto" />
 					</figure>
 					<div
-						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B]"
+						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B] md:p-6"
 					>
-						<div class="flex flex-row justify-between items-center mb-6">
-							<p class="text-white text-[18px] font-normal">Social</p>
+						<div class="flex flex-row justify-between items-center mb-6 md:mb-[20px]">
+							<p class="text-white text-[18px] font-medium md:text-[16px]">Social</p>
 							<img src="./images/icon-ellipsis.svg" alt="" />
 						</div>
-						<h1
-							class="timeframe-hours social text-white text-[56px] font-light leading-[1em] mb-[10px]"
-						>
-							1hr
-						</h1>
-						<p class="timeframe-text social text-paleBlue">Yesterday - 3hrs</p>
+						<div class="md:flex md:flex-row md:items-center md:justify-between">
+							<h1
+								class="timeframe-hours social text-white text-[56px] font-light leading-[1em] mb-[10px] md:text-[32px] md:m-0"
+							>
+								1hr
+							</h1>
+							<p class="timeframe-text social text-paleBlue">Yesterday - 3hrs</p>
+						</div>
 					</div>
 				</div>
 
@@ -162,18 +176,20 @@
 					</figure>
 
 					<div
-						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B]"
+						class="bg-darkBlue w-full h-auto place-self-end p-8 rounded-[14px] hover:bg-[#34397B] md:p-6"
 					>
-						<div class="flex flex-row justify-between items-center mb-6">
-							<p class="text-white text-[18px] font-normal">Work</p>
+						<div class="flex flex-row justify-between items-center mb-6 md:mb-[20px]">
+							<p class="text-white text-[18px] font-medium md:text-[16px]">Self Care</p>
 							<img src="./images/icon-ellipsis.svg" alt="" />
 						</div>
-						<h1
-							class="timeframe-hours self-care text-white text-[56px] font-light leading-[1em] mb-[10px]"
-						>
-							0hr
-						</h1>
-						<p class="timeframe-text self-care text-paleBlue">Yesterday - 1hr</p>
+						<div class="md:flex md:flex-row md:items-center md:justify-between">
+							<h1
+								class="timeframe-hours self-care text-white text-[56px] font-light leading-[1em] mb-[10px] md:text-[32px] md:m-0"
+							>
+								0hr
+							</h1>
+							<p class="timeframe-text self-care text-paleBlue">Yesterday - 1hr</p>
+						</div>
 					</div>
 				</div>
 			</section>
